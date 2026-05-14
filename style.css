@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+.todo-heading{
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px;
+}
+
+.create-task-label{
+    font-size: 26px;
+    font-weight: 500;
+
+}
+
+.create-task-input{
+    width: 95%;
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0px;
+}
+
+.create-task-button{
+    width: 80px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: #2596be;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.my-tasks-heading{
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.todo-list-container{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.todo-item-checkbox{
+    height: 23px;
+    width: 23px;
+    margin: 10px;
+}
+
+.todo-item-label{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.todo-item-content{
+    background-color: #e6f6ff;
+    width: 85%;
+    padding: 10px 20px;
+    border-width: 5px;
+    border-color: #096f92;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 4px;
+}

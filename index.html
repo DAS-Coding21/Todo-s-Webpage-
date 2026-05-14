@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/e4cdf3e801.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="todo-bg-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="todo-heading">Todos</h1>
+                    <div class="d-flex flex-column">
+                        <h1 class="create-task-label">Create Task</h1>
+                        <input type="text" id="todoInput" class="create-task-input">
+                    </div>
+                    <button class="create-task-button">Add</button>
+                    <h1 class="my-tasks-heading">My Tasks</h1>
+                    <ul class="todo-list-container">
+                        <li class="todo-item d-flex flex-row">
+                            <input type="checkbox" id="taskCheckbox" class="todo-item-checkbox">
+                            <div class="todo-item-content d-flex flex-row align-items-center">
+                                <label class="todo-item-label" for="taskCheckbox">HTML</label>
+                                <div class="ms-auto">
+                                    <i class="bi bi-trash delete-icon"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
