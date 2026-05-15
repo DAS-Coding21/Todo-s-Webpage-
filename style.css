@@ -51,6 +51,9 @@
     padding-left: 0;
 }
 
+.todo-item{
+    margin-bottom: 10px;
+}
 
 .todo-item-checkbox{
     height: 23px;
