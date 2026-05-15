@@ -3,3 +3,5 @@
 
 - First Step:
     Design the structure of the todo,s.
+- Second Step:
+    Dynamically adding the initial todo items.
