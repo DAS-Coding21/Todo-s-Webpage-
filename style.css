@@ -78,3 +78,8 @@
     border-right: none;
     border-radius: 4px;
 }
+
+.checked{
+    text-decoration: line-through;
+    color: #888;
+}

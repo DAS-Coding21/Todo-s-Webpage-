@@ -5,3 +5,5 @@
     Design the structure of the todo,s.
 - Second Step:
     Dynamically adding the initial todo items.
+- Third Step:
+    Adding functionality on the delete button and todoitem status.
