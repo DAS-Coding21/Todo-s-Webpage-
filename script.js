@@ -1,5 +1,7 @@
 let todoListContainer = document.getElementById("todoListContainer");
-
+let todoUserInput = document.getElementById("todoInput");
+let addBtn = document.getElementById("addBtn");
+let saveBtn = document.getElementById("saveBtn");
 
 let todoList = [
     {
@@ -15,6 +17,9 @@ let todoList = [
         todoId: 3,
     },
 ];
+
+let todoLength = todoList.length;
+console.log(todoLength);
 
     
 function createTodoItem(eachtodoItem) {
@@ -75,6 +80,39 @@ function onTodoDelete(todoUniqueId) {
     todoListContainer.removeChild(todoListItem);
 }
 
+addBtn.addEventListener("click", function(){
+    OnTodoAddBtn();
+});
+
+function OnTodoAddBtn(){
+    let userInput = todoUserInput.value;
+
+    if(userInput === ""){
+        alert("Please enter a task.");
+        return;
+    }
+    
+    let todoCount = todoLength + 1;
+
+    let newTodoItem = {
+        todoText: userInput,
+        todoId: todoCount
+    };
+    createTodoItem(newTodoItem);
+    console.log(newTodoItem);
+    todoList.push(newTodoItem);
+    todoUserInput.value = "";
+}
+
+function onSaveBtn(){
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+}
+// localStorage.removeItem("todoList");
+saveBtn.addEventListener("click", function() {
+    onSaveBtn();
+});
+
 for (let eachtodoItem of todoList) {
     createTodoItem(eachtodoItem);
+    console.log(eachtodoItem);
 }
